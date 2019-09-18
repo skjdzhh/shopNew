@@ -1,23 +1,17 @@
 <template>
   <div id="app">
-  
-  <router-view></router-view>
-   <ul class="footer-bar">
-     <li class="footer-bar-item">
-     <router-link to="/">首页</router-link>
-     </li>
-     <li class="footer-bar-item">
-    <router-link to="/category">分类</router-link>
-     </li>
-     <li class="footer-bar-item">
-     <router-link to="/cart">购物车</router-link>
-     </li>
-     <li class="footer-bar-item">
-     <router-link to="/profile">我的</router-link>
-     </li>
+    
 
+    <router-view></router-view>
 
-     <!-- 命名空间的命名法
+    <van-tabbar v-model="active">
+      <van-tabbar-item icon="home-o" to="/">首页</van-tabbar-item>
+      <van-tabbar-item icon="records" to="category">分类</van-tabbar-item>
+      <van-tabbar-item icon="shopping-cart-o" to="cart">购物车</van-tabbar-item>
+      <van-tabbar-item icon="contact" to="profile">我的</van-tabbar-item>
+    </van-tabbar>
+
+    <!-- 命名空间的命名法
      public目录表示不用打包的资源文件
      当在一个组件中不引入一个组件的时候，没有必要再这个组件中注册，
      路由不算组件的引入，所以可以不用
@@ -35,28 +29,51 @@
       git remote add origin https://github.com/skjdzhh/shopNew.git
       git push -u origin master
 
-      -->
 
-   </ul>
+      vant组件库（移动端）
+      推荐组件库：vux(移动端)
+      ElementUI(饿了吗)
+      iView（有生态，有后端管理系统，iChart）
+      i18n：国际化（view插件vue-i18n解决）
+      muse-UI
+
+      安装插件
+      npm install xx --save             //生产环境
+      npm install xx --save-dev         //开发环境 
+
+      安装新的包后需要重启一下服务 
+
+      头部组件NavBar
+
+    -->
   </div>
 </template>
 
+<script>
+export default {
+  data(){
+    return{
+      active:0
+    }
+  }
+}
+</script>
+
 <style lang="scss">
-.footer-bar{
+.footer-bar {
   display: flex;
-// 弹性盒模型中父元素的高度和子元素的高度相同
-  background:#eeeeee;
+  // 弹性盒模型中父元素的高度和子元素的高度相同
+  background: #eeeeee;
   // 固定定位的元素脱离文档流（高由内容撑，宽由内容撑，多个占一行）
   position: fixed;
   bottom: 0px;
-  width:100%;
+  width: 100%;
   height: 1rem;
   // sass语法
-  &-item{
-    flex-grow:1;
+  &-item {
+    flex-grow: 1;
     text-align: center;
     line-height: 1rem;
-
   }
 }
 </style>
