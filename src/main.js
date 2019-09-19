@@ -13,12 +13,12 @@ import '@/assets/js/rem.js'
 // Vue.use(Vant)
 
 // 按需引入,推荐方式
-import { Icon,Button,Cell, CellGroup, NavBar ,Tabbar,TabbarItem,Swipe,SwipeItem} from 'vant';
+import { Icon,Button,Cell, CellGroup, NavBar ,Tabbar,TabbarItem,Swipe,SwipeItem,Lazyload} from 'vant';
 
 // Vue.use(Button)
 // Vue.use(Icon)
 //全局注册组件
-Vue.use(Button).use(Icon).use(Cell).use(CellGroup).use(NavBar).use(Tabbar).use(TabbarItem)
+Vue.use(Button).use(Icon).use(Cell).use(CellGroup).use(NavBar).use(Tabbar).use(TabbarItem).use(Lazyload)
 .use(Swipe).use(SwipeItem);    
 
 Vue.config.productionTip = false
