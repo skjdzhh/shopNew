@@ -4,15 +4,17 @@
 
     <router-view></router-view>
 
-  <!-- 标签栏，页面底部 -->      
+  <!-- 标签栏，页面底部 -->       
     <van-tabbar v-model="active">
       <van-tabbar-item icon="home-o" to="/">首页</van-tabbar-item>
-      <van-tabbar-item icon="records" to="category">分类</van-tabbar-item>
-      <van-tabbar-item icon="shopping-cart-o" to="cart">购物车</van-tabbar-item>
-      <van-tabbar-item icon="contact" to="profile">我的</van-tabbar-item>
+      <van-tabbar-item icon="records" to="/category">分类</van-tabbar-item>
+      <van-tabbar-item icon="shopping-cart-o" to="/cart">购物车</van-tabbar-item>
+      <van-tabbar-item icon="contact" to="/profile">我的</van-tabbar-item>
+      <van-tabbar-item icon="gem-o" to="/tanxing2">弹性</van-tabbar-item>
     </van-tabbar>
 
   
+
   </div>
 </template>
 
@@ -26,7 +28,11 @@ export default {
 }
 </script>
 
+
 <style lang="scss">
+body{
+  height: 3000px;
+}
 .footer-bar {
   display: flex;
   // 弹性盒模型中父元素的高度和子元素的高度相同
