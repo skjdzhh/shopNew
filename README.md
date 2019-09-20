@@ -68,4 +68,14 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
       npm install vue-awesome-swiper --save
       npmjs
 
+      fixed脱离文档流，宽和高由内容撑得
+      z-index;      用来显示这一层页面的层次，当其值最大的时候这一层是页面的最上一层
+
+      弹性盒模型:见Tanxing1.vue、Tanxing2.vue文件
+
+      text-align:center;    控制标签中文字居中、并且可以向下传递
+      !important选择器的权重值最高
+      !
+      
+
     -->

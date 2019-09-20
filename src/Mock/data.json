@@ -1,0 +1,15 @@
+{
+    "list":[
+        {
+            "name":"weichuang",
+            "age":12,
+            "height":178
+        },
+        {
+            "name":"xiecheng",
+            "age":20,
+            "height":190
+        }
+    ]
+
+}

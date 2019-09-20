@@ -14,7 +14,7 @@ import '@/assets/js/rem.js'
 
 // 按需引入,推荐方式
 import { Icon,Button,Cell, CellGroup, NavBar ,Tabbar,TabbarItem,Swipe,SwipeItem,Lazyload} from 'vant';
-
+import  "@/Mock/mock"
 // Vue.use(Button)
 // Vue.use(Icon)
 //全局注册组件
