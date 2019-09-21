@@ -33,7 +33,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
      当在一个组件中不引入一个组件的时候，没有必要再这个组件中注册，
      路由不算组件的引入，所以可以不用
 
-     view-router为自定义组件，
+     view-router为vue自定义组件，
 
      router-link,会被渲染成一个a标签
       将本地项目上传到远端     
@@ -45,6 +45,10 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
       git commit -m "first commit"
       git remote add origin https://github.com/skjdzhh/shopNew.git
       git push -u origin master
+      git push -u origin master
+      git checkout -b sunkejun
+      git checkout sunkejun
+      git branch sunkejun
 
       
     
@@ -58,17 +62,17 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
       安装插件
       npm install xx --save             //生产环境
-      npm install xx --save-dev         //开发环境 
-
+      npm install xx --save-dev         //开发环境    
       安装新的包后需要重启一下服务 
 
-      头部组件NavBar
+      头部组件NavBar   
 
       热门商品  
-      npm install vue-awesome-swiper --save
+      npm install vue-awesome-swiper --save       
       npmjs
 
-      fixed脱离文档流，宽和高由内容撑得
+      fixed脱离文档流，宽和高由内容撑得   
+      
       z-index;      用来显示这一层页面的层次，当其值最大的时候这一层是页面的最上一层
 
       弹性盒模型:见Tanxing1.vue、Tanxing2.vue文件
