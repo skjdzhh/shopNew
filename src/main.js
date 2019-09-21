@@ -10,7 +10,7 @@ import '@/assets/js/rem.js'
 //vant完全引入  
 // import Vant from 'vant'
 // import 'vant/lib/index.css'
-// Vue.use(Vant)
+// Vue.use(Vant)    
 
 // 按需引入,推荐方式
 import { Icon,Button,Cell, CellGroup, NavBar ,Tabbar,TabbarItem,Swipe,SwipeItem,Lazyload} from 'vant';

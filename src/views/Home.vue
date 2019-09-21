@@ -5,13 +5,12 @@
       <van-icon name="search" slot="left"></van-icon>
       <van-icon name="cart" slot="right"></van-icon>
     </van-nav-bar>
-    
-
+  
     <!-- 轮播图 -->
     <div>
       <van-swipe :autoplay="5000" class="carousel">
         <van-swipe-item v-for="(item,index) in carouselItem" :key="index" class="uu">
-          <img v-lazy="item.imgSrc" alt class="carousel-item" />
+          <img v-lazy="item.imgSrc" alt class="carousel-item" />    
         </van-swipe-item>
       </van-swipe>
     </div>
@@ -47,7 +46,7 @@
 
 <script>
 import "swiper/dist/css/swiper.css";
-//一个组件库中暴露出很多个组件
+//一个组件库中暴露出很多个组件  
 import { swiper, swiperSlide } from "vue-awesome-swiper";
 import Axios from "axios";
 export default {

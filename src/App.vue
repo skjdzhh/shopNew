@@ -13,8 +13,6 @@
       <van-tabbar-item icon="gem-o" to="/tanxing2">弹性</van-tabbar-item>
     </van-tabbar>
 
-  
-
   </div>
 </template>
 
